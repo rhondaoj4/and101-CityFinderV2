@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SpotDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+        <ImageButton
+            android:id="@+id/back_button_spot_detail"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/dark_blue" />
+
+        <ImageView
+            android:id="@+id/spot_detail_image"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_button_spot_detail"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/spot_detail_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/amiko"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spot_detail_image"
+            tools:text="The Hidden Bookstore" />
+
+        <RatingBar
+            android:id="@+id/spot_rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:theme="@style/RatingBar"
+            app:layout_constraintStart_toStartOf="@id/spot_detail_name"
+            app:layout_constraintTop_toBottomOf="@id/spot_detail_name"
+            tools:rating="4.5" />
+
+        <TextView
+            android:id="@+id/spot_detail_hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/amiko"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:drawableStartCompat="@android:drawable/ic_menu_recent_history"
+            app:layout_constraintEnd_toEndOf="@id/spot_detail_name"
+            app:layout_constraintStart_toStartOf="@id/spot_detail_name"
+            app:layout_constraintTop_toBottomOf="@id/spot_rating_bar"
+            tools:text="Open now: 10:00 AM - 9:00 PM" />
+
+        <TextView
+            android:id="@+id/spot_detail_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/amiko"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:drawableStartCompat="@android:drawable/ic_dialog_map"
+            app:layout_constraintEnd_toEndOf="@id/spot_detail_name"
+            app:layout_constraintStart_toStartOf="@id/spot_detail_name"
+            app:layout_constraintTop_toBottomOf="@id/spot_detail_hours"
+            tools:text="123 Secret Lane, Paris, France" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

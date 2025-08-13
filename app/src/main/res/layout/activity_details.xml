@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/light_blue"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/city_name_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="London, United Kingdom" />
+
+    <TextView
+        android:id="@+id/time_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amiko"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/city_name_details"
+        tools:text="10:30 PM" />
+
+    <ImageView
+        android:id="@+id/random_city_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/btn_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_display" />
+
+    <ProgressBar
+        android:id="@+id/details_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_explore_another"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Explore Another City"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/btn_spots"
+        style="@style/DetailsImageButton.Large"
+        android:contentDescription="Hidden Spots"
+        android:src="@drawable/spots"
+        app:layout_constraintBottom_toTopOf="@+id/label_spots"
+        app:layout_constraintEnd_toStartOf="@+id/btn_phrases"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_phrases"
+        style="@style/DetailsImageButton.Large"
+        android:contentDescription="Useful Phrases"
+        android:src="@drawable/phrases"
+        app:layout_constraintBottom_toTopOf="@+id/label_phrases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_spots" />
+
+    <TextView
+        android:id="@+id/label_spots"
+        style="@style/DetailsLabel"
+        android:text="Hidden Gems"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_explore_another"
+        app:layout_constraintEnd_toEndOf="@id/btn_spots"
+        app:layout_constraintStart_toStartOf="@id/btn_spots" />
+
+    <TextView
+        android:id="@+id/label_phrases"
+        style="@style/DetailsLabel"
+        android:text="Phrases"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_explore_another"
+        app:layout_constraintEnd_toEndOf="@id/btn_phrases"
+        app:layout_constraintStart_toStartOf="@id/btn_phrases" />
+
+
+    <ImageButton
+        android:id="@+id/btn_currency"
+        style="@style/DetailsImageButton.Large"
+        android:contentDescription="Currency"
+        android:src="@drawable/currency"
+        app:layout_constraintBottom_toTopOf="@+id/label_currency"
+        app:layout_constraintEnd_toStartOf="@+id/btn_demographics"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_demographics"
+        style="@style/DetailsImageButton.Large"
+        android:contentDescription="Popular Demographics"
+        android:src="@drawable/activities"
+        app:layout_constraintBottom_toTopOf="@+id/label_demographics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_currency" />
+
+    <TextView
+        android:id="@+id/label_currency"
+        style="@style/DetailsLabel"
+        android:text="Currency"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_spots"
+        app:layout_constraintEnd_toEndOf="@id/btn_currency"
+        app:layout_constraintStart_toStartOf="@id/btn_currency" />
+
+    <TextView
+        android:id="@+id/label_demographics"
+        style="@style/DetailsLabel"
+        android:text="Grow Up"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_spots"
+        app:layout_constraintEnd_toEndOf="@id/btn_demographics"
+        app:layout_constraintStart_toStartOf="@id/btn_demographics" />
+
+
+    <ImageButton
+        android:id="@+id/btn_weather"
+        style="@style/DetailsImageButton.Large"
+        android:contentDescription="Weather"
+        android:src="@drawable/weather"
+        app:layout_constraintBottom_toTopOf="@+id/label_weather"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cuisine"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_cuisine"
+        style="@style/DetailsImageButton.Large"
+        android:contentDescription="Cuisine"
+        android:src="@drawable/cooking"
+        app:layout_constraintBottom_toTopOf="@+id/label_cuisine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_weather" />
+
+    <TextView
+        android:id="@+id/label_weather"
+        style="@style/DetailsLabel"
+        android:text="Weather"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_currency"
+        app:layout_constraintEnd_toEndOf="@id/btn_weather"
+        app:layout_constraintStart_toStartOf="@id/btn_weather" />
+
+    <TextView
+        android:id="@+id/label_cuisine"
+        style="@style/DetailsLabel"
+        android:text="Cuisine"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_currency"
+        app:layout_constraintEnd_toEndOf="@id/btn_cuisine"
+        app:layout_constraintStart_toStartOf="@id/btn_cuisine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

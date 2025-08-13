@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.City_Finder" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- App-wide colors -->
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Background and text -->
+        <item name="android:windowBackground">@color/light_blue</item>
+        <item name="colorOnBackground">@color/black</item>
+
+        <!-- Entry boxes -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnSurfaceVariant">@color/gray</item> <!-- for hint text -->
+
+        <item name="textInputStyle">@style/Widget.CityFinder.TextInputLayout.OutlinedBox</item>
+
+        <!-- Font -->
+        <item name="android:fontFamily">@font/amiko</item>
+    </style>
+
+    <style name="Theme.City_Finder" parent="Base.Theme.City_Finder" />
+</resources>
