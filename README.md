@@ -3,10 +3,8 @@
 Submitted by:
 - Isabella Sasso
 - Rhonda Ojongmboh
-- Aimee Rollins
-- Shannon Escoriaza
 
-Time spent: **X** hours spent in total
+Time spent: **60+** hours spent in total
 
 ## Summary
 
@@ -16,15 +14,15 @@ This document provides a summary of our project building process for our app, Ci
 
 The following REQUIRED features are completed:
 
-- [ ] Assign features to each member of your group
-- [ ] Establish a goal time for completing each feature
+- [X] Assign features to each member of your group
+- [X] Establish a goal time for completing each feature
 
 The following REQUIRED files are included:
 
-- [ ] Updated 📄 `project_spec.md`, which contains:
+- [X] Updated 📄 `project_spec.md`, which contains:
   - [X] App Overview (Milestone 1)
   - [X] App Spec (Milestone 1)
-  - [ ] Checked off 2+ completed features
+  - [X] Checked off 2+ completed features
   - [ ] 2+ Videos/GIFs of build progress
 
 - [ ] Our 🎥 Demo Video
@@ -38,10 +36,10 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://i.imgur.com/SRTuUeF.gif' title='Video Demo' width='' alt='Video Demo' />
 
-VIDEO created with **your chosen video tool**
+VIDEO created with **Kooha**
 
 ## Notes
 
-Here's a place for any other notes on this milestone!
+
