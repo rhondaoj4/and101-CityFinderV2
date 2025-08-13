@@ -25,8 +25,8 @@ The following REQUIRED files are included:
   - [X] Checked off 2+ completed features
   - [ ] 2+ Videos/GIFs of build progress
 
-- [ ] Our 🎥 Demo Video
-  - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
+- [X] Our 🎥 Demo Video
+  - [X] We have also added the Demo Video Link to the Group Info Form on the course portal.
 
 The following EXTRA features are implemented:
 
@@ -36,7 +36,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src="https://i.imgur.com/SRTuUeF.gif" alt="Video Demo" width="600" />
+**IT'S TOO LARGE**
 
 VIDEO created with **Kooha**
 
