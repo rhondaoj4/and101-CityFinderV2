@@ -36,7 +36,7 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='https://i.imgur.com/SRTuUeF.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src="https://i.imgur.com/SRTuUeF.gif" alt="Video Demo" width="600" />
 
 VIDEO created with **Kooha**
 
