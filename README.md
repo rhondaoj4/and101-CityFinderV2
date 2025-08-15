@@ -40,6 +40,8 @@ Here's a video that demos all of the app's implemented features:
 
 VIDEO created with **Kooha**
 
+Our presentation link: https://www.canva.com/design/DAGwAMGCsIE/f5C8R-dVfEk2gS4DHK3n-g/edit?utm_content=DAGwAMGCsIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ## Notes
 
 
